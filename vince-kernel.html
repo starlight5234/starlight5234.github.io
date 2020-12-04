@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <title>Starlight's Custom Kernels</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="https://github.com/starlight5234">Github</a></li>
+                <li><a href="mailto:support@starlight5234.tk">Mail</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 id="Android%20Custom%20%20Kernels">StormBreaker Kernel for Redmi 5 Plus</h1>
+    <p>
+        codename <i>vince</i><br>
+        Co-maintainer: <a href="https://github.com/danascape">Saalim</a><br><br>
+    </p>
+
+    <img src="img/SB_Banner.jpg" alt="StormBreaker Banner">
+    <h3 id="About%20Team%20StormBreaker">About us:</h3>
+    <p>
+        We here at Team StormBreaker, aim for a kernel with fine tuned balance between performance, 
+        battery & usage stability while reaching Android's requirements & being up-to-date with LTS release. 
+        It has an easy installation process thanks to AnyKernel3 
+        (by <a href="https://github.com/osm0sis/AnyKernel3">osm0sis</a> which lets us support Custom ROMs.
+    </p>
+
+    <p> Since this kernel is 4.9 it's based on Energy Aware Scheduling (EAS) known to use the most efficienct 
+        CPU for required task whilst aiming to improve energy efficient system operation, in short yielding
+        more Screen On Time (SOT) than LTS kernels without EAS. The kernel is always compiled with Latest GCC compiler 
+        by <a href="https://github.com/arter97">Arter97</a>
+    </p>
+
+    <h3>Features:</h3>
+    <ul>
+        <li>Rebased to LA.UM.9.6.2.r1-02800-89xx.0</li>
+        <li>Supports Android 10 and 11</li>
+        <li>Enable vDSO 32-bit (for almost 0.4% better battery according to Google) </li>
+        <li>Upstream lz4 from 4.14 LTS</li>
+        <li>Enable Power Efficient Workqueue</li>
+        <li>Add Kcal Implementation (for adjusting screen colors) </li>
+        <li>Fix Gcam focus & slow motion bug</li>
+        <li>Scheduler changes from 4.14 (increasing reliability of EAS) </li>
+        <li>Faster & better deepsleep</li>
+        <li>Disable I/O stat accounting (reduces overhead)</li>
+        <li>Add Vibration control</li>
+        <li>Add Sound control</li>
+        <li>Support ExFat (for sdcards)</li>
+        <li>Disable unneccessary debugging (reduces overhead)</li>
+        <li>Add CPU Input & DevFreq Boost</li>
+        <li>Remove CAF's hispeed functionality (kdragon: reduce useless overhead in schedutil)</li>
+        <li>Reduce power consumption of sensors and camera</li>
+        <li>Remove unneccessary wakelocks</li>
+        <li>Implement USB 3.0 Fast Charging</li>
+        <li>Update wlan and audio drivers from LA.UM.9.6.2.r1-02800-89xx.0</li>
+        <li>Drop Core control (Already dropped by CAF for msm8953, hence redundant code)</li>
+    </ul>
+
+    <h3 id="Installation">Installation</h3>
+    <p>
+        - Make sure you have a custom recovery like Orangefox<br>
+        - Download the kernel zip from <a href="vince-kernel.html#Download">downloads</a> section<br>
+        - Reboot to recovery<br>
+        - Backup from current kernel (Boot Partition)<br>
+        - Install the kernel zip file without wiping any partitions<br>
+        - Reboot back to system<br>
+        - Enjoy! :D<br>
+    </p>
+
+    <h3 id="Download">Download</h3>
+    <p><a href="https://sourceforge.net/projects/stormbreakerdevices/files/vince/">Click here</a> and download the zip file available first</p>
+    <p>
+        XDA link (rarely updated, use telelgram channels for faster updates): 
+        <a href="https://forum.xda-developers.com/t/stormbreaker-kernel-4-9-x-vince-q.4051761/">Click Here</a>
+    </p><br><br>
+    
+    <h3 id="More%about%20Team%20StormBreaker">More about Team StormBreaker</h3>
+    <p>
+        StormBreaker Updates telegram channel: <a href="https://t.me/stormbreakerkernelupdatescl">Click here</a><br>
+        StormBreaker Community support telegram group: <a href="https://t.me/Stormbreakerofficial">Click Here</a><br>
+    </p>
+
+    <p><b>Members:</b></p> 
+    <ul style="list-style-type:circle">
+            <li>Danascape</li>
+            <li>CryllicBuster273</li>
+            <li>Sreekanth Palakurthi</li>
+            <li>PredatorX91</li>
+            <li>Sakthivel</li>
+            <li>Baibhab</li>
+            <li>Giovanni Ricca</li>
+            <li>Rahul Pandey</li>
+            <li>Starlight5234</li>
+    </ul>
+    
+    <footer>
+        <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></br>
+            Created with a <a href="src/ssg5">slightly modified</a> version of <a
+                href="https://www.romanzolotarev.com/ssg.html">ssg</a> by Roman Zolotarev</p>
+    </footer>
+
+</body>
+
+</html>

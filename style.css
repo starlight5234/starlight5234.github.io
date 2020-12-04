@@ -355,15 +355,12 @@ p.date {
   color: #999;
 }
 ul.articles {
-  list-style: none;
-  padding: 0;
+  list-style: circle;
+  padding: 1em;
 }
 #Articles {
   margin-top: 2em;
 }
 footer {
   font-size: 12px;
-  position: absolute;
-  bottom: 15px;
-  height: 60px; /* Height of the footer */
 }
