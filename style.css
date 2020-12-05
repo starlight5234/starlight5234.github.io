@@ -361,6 +361,11 @@ ul.articles {
 #Articles {
   margin-top: 2em;
 }
+ul.bullet-list{
+  list-style-type: disc;
+  padding: 0;
+  margin: 1em;
+}
 footer {
   font-size: 12px;
 }
