@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="icon" type="image/x-icon" href="../images/icons/logo.svg">
+    <title>Starlight5234's Projects</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- Fonts Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e90de7a47e.js" crossorigin="anonymous"></script>
+
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Custom Mouse -->
+    <script type="text/javascript"
+        src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
+
+    <!-- Disable autoscroll -->
+    <script>
+        history.scrollRestoration = "manual"
+    </script>
+
+
+</head>
+
+<body class="bg-color">
+    <nav id="navbar" class="navbar navbar-dark nav-color fixed-top p-0">
+        <div id="nav-container" class="container-fluid mx-md-5">
+            <a id="nav-name" class="navbar-brand magic-hover magic-hover__square"
+            data-bs-toggle="tooltip" title="Home Page" href="../index.html">
+                <img src="../images/icons/logo.svg" alt="Starlight5234" width="30" height="24"
+                    class="d-inline-block align-baseline">
+                Starlight5234
+            </a>
+
+            <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                class="no-cursor text-white link-underline link-underline-opacity-0">
+                <span class="d-none d-sm-inline px-3">Menu</span>
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end grey-bg text-white no-cursor text-center" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+
+          <a type="button" class="me-md-4 text-white" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="menu-content">
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="../index.html">Home</a></li>
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="./stormbreaker.html">StormBreaker</a></li>
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="./projects.html">Projects</a></li>
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="./events.html">Events</a></li>
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="https://github.com/starlight5234"><i class="fa-brands fa-github pe-1"></i> Github</a></li>
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="https://t.me/starlight5234/"><i class="fa-brands fa-telegram pe-1"></i>Telegram</a></li>
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="https://www.linkedin.com/in/anurag-chorghe-304119215/"><i class="fa-brands fa-linkedin pe-1"></i>LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="fixed wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+    
+    <div id="content-container">
+        <section id="title-container" class="full-div centered-div">
+            <div class="row">
+                <div class="col-sm-12 col-xl-auto centered-div">
+                    <img class="img-fluid" alt="StormBreaker Banner" src="../images/projects/project-banner.svg" height="480" width="640">
+                </div>
+                <div class="col-12 col-xl centered-div flex-column mt-5">
+                    <h1>Projects</h1>
+                    <p class="pt-md-5 pt-3">
+                        People get more control and ownership over their work through projects. Projects can be designed to
+                        accommodate a person's schedule and availability while remaining more flexible in terms of scheduling and
+                        duration. Individuals can focus on developing particular technical or creative abilities by working on projects,
+                        which can improve their knowledge and make them more competitive in their chosen profession.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <a id="stormbreaker"></a>
+        <section id="event-1" class="my-md-5">
+            <div class="row">
+                <div class="col-lg-12 order-lg-1 order-2">
+                    <h1 class="text-center">StormBreaker Kernel</h1>
+                </div>
+                <div class="col-12 col-lg-auto centered-div order-lg-2 order-1">
+                    <div class="d-flex flex-column align-items-center">
+                        <img class="section-img img-fluid" src="../images/projects/sb-kernel.svg" width="400px">
+                        <a type="button" href="https://github.com/stormbreaker-project/" class="btn blue-bg rounded-pill my-3 px-5 magic-hover magic-hover__square"><i class="fa-brands fa-github pe-1"></i>GitHub</a>
+                    </div>
+                </div>
+                <div class="col-lg order-lg-3 order-3">
+                    <p>
+                        When updating from Android 11 to Android 12, we need to sometimes update/patch vendor blobs of our device for
+                        stability and compatibility. However changes to vendor blob may also require changes in Device Tree Blobs/Overlay
+                        (DTB/O). However these changes were not open sourced by Xiaomi. So I had to extract the Flattened Device Tree (FDT)
+                        from android 11 and extract the necessary changes for our device such as display, touchscreen, camera, and more.
+                        These changes were then overlaid onto android 12 DTB for our device platform. After import these changes relevant
+                        drivers were added to handle their interaction with the hardware.
+                    </p>
+                    <p>
+                        Once the device booted up with these changes we were able to access most of the features other than camera. Out of
+                        three lenses only primary lens was working. Other devs in my community were not able to pin point the reason behind
+                        this. But after trouble shooting for a while I found out that the reason was bad camera actuator links in the camera
+                        DTS provided by Xiaomi. Then came the issue of Xiaomi secretly adding support for another panel. The touch failed on
+                        devices with these panels, however this bug was fixed by a dev while trying to boot Ubuntu Touch. The only device
+                        related bug it has right now is 2 lenses dead on Poco M3.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <a id="upastithi"></a>
+        <section id="event-2" class="my-md-5">
+            <div class="row">
+                <div class="col-lg-12 order-lg-1 order-2">
+                    <h1 class="text-center">Android Application with REST API</h1>
+                </div>
+                <div class="col-12 col-lg-auto centered-div order-lg-3 order-1">
+                    <div class="d-flex flex-column align-items-center">
+                        <img class="section-img img-fluid" src="../images/projects/upastithi.svg" width="400px">
+                        <a type="button" href="https://github.com/starlight5234/mini-project" class="btn blue-bg rounded-pill my-3 px-5 magic-hover magic-hover__square"><i class="fa-brands fa-github pe-1"></i>GitHub</a>
+                    </div>
+                </div>
+                <div class="col-lg order-lg-2 order-3">
+                    <p>
+                        Our initial idea for making an attendance system was using codes to input into a field and mark your attendance and
+                        his code would be generated by the teacher. Although it seems that it is fine there are ways to exploit it. You can
+                        sit at home and mark your attendance. So we decided why not add your geographic location to this so this exploit can
+                        be avoided and successfully we(me and my mini project team from college) were able to implement this. However during
+                        our project review we faced another interesting exploit. Entering code by standing outside the class.
+                    </p>
+                    <p>
+                        The app is connected with the web server through REST API. The RESTful API is built using Python Flask and the
+                        database connectivity and query are handled by Python Flask SQLAlchemy. Android application was written in kotlin
+                        and uses a simple http client i.e OkHttp that supports TLS features. The user queries our endpoints on RESTful API
+                        and an appropriate response is generated. If the code entered and geographic location lies within the set boundaries
+                        the attendance/presentie is marked. This application is not as useful in this domain but it is reliable for
+                        companies with a well built single floor infrastructure. GPS might not be the best solution right now but maybe in
+                        the upcoming decades it will.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <a id="rom"></a>
+        <section id="event-3" class="my-md-5">
+            <div class="row">
+                <div class="col-md-12 order-md-1 order-2">
+                    <h1 class="text-center">Embedded Systems & OS Development</h1>
+                </div>
+                <div class="col-12 col-lg-auto centered-div order-lg-2 order-1">
+                    <div class="d-flex flex-column align-items-center">
+                        <img class="section-img img-fluid" src="../images/projects/rom.png" width="400px">
+                        <a type="button" href="https://github.com/RevengeOS-Devices/device_xiaomi_vince" class="btn blue-bg rounded-pill my-3 px-5 magic-hover magic-hover__square"><i class="fa-brands fa-github pe-1"></i>GitHub</a>
+                    </div>
+                </div>
+                <div class="col-md order-md-3 order-3">
+                    <p>
+                        Do you have have app(s) that you never use on your phone but can't uninstall either? Been there. Such unnecessary apps are
+                        nothing but bloat, but what is the solution to this? Simply put installing an Operating System that is minimal.
+                        Android is an open source operating system for mobile devices and a corresponding open source project led by Google.
+                        The Android Open Source Project (AOSP) repository offer the information and source code needed to create custom variants 
+                        of the Android OS, port devices and accessories to the Android platform, and ensure devices meet the compatibility 
+                        requirements that keep the Android ecosystem a healthy and stable environment for millions of users.
+                    </p>
+                    <p>
+                        To build Custom AOSP ROM you need a few repositories set i.e device tree, vendor tree and kernel tree. Each of these
+                        can be cleaned of unnecessary clutter that is started with the OS. Patching kernel and making appropriate changes
+                        for your device can make the custom OS smoother than you could ever imagine it. Personally it has been twice the
+                        better experience as compared to MIUI. I learnt a lot about how our phones work and how we can tinker with it while
+                        doing this project
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <a id="gmeet"></a>
+        <section id="event-4" class="my-md-5">
+            <div class="row">
+                <div class="col-md-12 order-md-1 order-2">
+                    <h1 class="text-center">Attendance Scrapper from Gmeet</h1>
+                </div>
+                <div class="col-12 col-md-auto centered-div order-md-3 order-1">
+                    <div class="d-flex flex-column align-items-center">
+                        <img class="section-img img-fluid" src="../images/projects/gmeet.svg" width="400px">
+                        <a type="button" href="https://github.com/starlight5234/Attendance-Scrapper" class="btn blue-bg rounded-pill mt-5 mb-3 px-5 magic-hover magic-hover__square"><i class="fa-brands fa-github pe-1"></i>GitHub</a>
+                    </div>
+                </div>
+                <div class="col-md order-md-2 order-3">
+                    <p>
+                        One day whilst I was joining my lecture's google meet I heard "He is very sincere" and the next thing I know is I
+                        was the Class Representative. My Physics teacher had trust issues with student joining gmeet only when attendance
+                        was taken so she thought of taking "screenshot" mid lecture. I thought why not make a tool that could help her
+                        instead? After the first time I cleaned up the generated data manually and sent it to my teacher she told me to
+                        convert this into a tool that even she can use so I began and this is what I would make changes to the list
+                        generated as per her request. It even supported multiple classes but unfortunately while shifting from laptop to
+                        PC I wiped my data while moving my SSD so that's that.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="d-block d-md-none">
+            <section class="empty"></section>
+        </div>
+        
+        <!-- Footer -->
+        <footer id="footer" class="footer-padding">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li>
+                    <a href="https://github.com/starlight5234">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/starlight5234/">
+                        <i class="fa-brands fa-telegram" style="transform:translateY(-5px)"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/anurag-chorghe-304119215/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../index.html#skills">Services</a></li>
+                <li><a href="#a" onclick="contactAnimation('content-container')">Contact</a></li>
+            </ul>
+            <div id="copyright" class="container-fluid d-flex align-items-center justify-content-center">
+                <div class="row text-center justify-content-center">
+                    <div class="col-12 col-sm-auto">
+                        &copy2023 Anurag Chorghe
+                    </div>
+                    <div class="d-none d-lg-inline col-sm-auto">
+                        |
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="popup" class="d-none">
+        <div id="contact" class="full-div d-flex align-items-center justify-content-center text-light no-cursor">
+            <div class="container px-5 ps-0">
+                <div class="contact-container">
+                    <div class="contact-content pb-5 rounded-5 text-center">
+                        <h1 class="py-3">
+                            Let's Talk
+                            <i class="fa fa-times text-light position-absolute top-0 end-0 me-4 mt-3 me-md-4 mt-md-4"
+                                aria-hidden="true" onclick="contactAnimation('content-container')"></i>
+                        </h1>
+                        <p class="text-light mx-5">
+                            To request a query or want to meet up for coffee, contact me directly on social media or
+                            fill
+                            out this form and I will get back to you promptly
+                        </p>
+                        <div class="row align-items-center px-3">
+                            <div class="col col-12 col-md-6 d-none d-md-flex align-items-center justify-content-center">
+                                <img class="img-fluid ms-5" src="../images/icons/contact-me.svg" alt="contact-me-image"
+                                    onclick="alert('Perhaps some animation')" data-bs-toggle="tooltip"
+                                    title="Try clicking me">
+                            </div>
+                            <div class="col col-md-6 py-3 py-md-0">
+                                <form id="contactForm">
+                                    <div class="row mx-3">
+                                        <div class="col col-12 col-lg-6" style="z-index: 999;">
+                                            <input id="inputName" name="Name" type="text" class="form-control"
+                                                placeholder="Your Name" aria-label="Your Name">
+                                        </div>
+                                        <div class="col col-12 col-lg-6 py-3 py-lg-0">
+                                            <input id="inputMail" name="Email" type="text" class="form-control"
+                                                placeholder="Your Email" aria-label="Your Email">
+                                        </div>
+                                        <div class="col col-12 pt-lg-4">
+                                            <textarea id="inputQuery" name="Query" class="form-control" rows="3"
+                                                placeholder="Type your query or message here"></textarea>
+                                        </div>
+
+                                        <div class="col col-12 py-3 pt-md-4 mx-auto">
+                                            <button id="contactForm-btn" type="submit" value="submit"
+                                                class="btn btn-primary form-control">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Theming -->
+    <link rel="stylesheet" type="text/css" href="../themes/global.css">
+    <link rel="stylesheet" type="text/css" href="../themes/template.css">
+    <link rel="stylesheet" type="text/css" href="../themes/background.css">
+
+    <script src="../js/common/mouseAnimation.js"></script>
+    <script src="../js/common/contactForm.js"></script>
+
+</body>
+
+</html>

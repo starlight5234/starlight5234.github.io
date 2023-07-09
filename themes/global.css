@@ -1,0 +1,331 @@
+:root {
+    --background: #282a36;
+    --text: #f8f8f2;
+    --background-dark: #f8f8f2;
+    --text-dark: #282a36;
+    --foreground: #6272a4;
+    --foreground-dark: #2E3440;
+    scroll-padding: 20px;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--foreground);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--foreground-dark);
+}
+
+* {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.magicPointer-new {
+    background: cyan !important; 
+    background-color: cyan !important;
+}
+
+.nav-color {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.bg-color {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+/* Contact Form */
+.contact-container {
+    position: absolute;
+    top: 50%;
+}
+
+.contact-content {
+    background-color: var(--foreground-dark);
+}
+
+@media (max-width: 768px) {
+    .contact-content>h1 {
+        font-size: 4vw;
+    }
+
+    .contact-content>.thread-desc {
+        font-size: 3vw;
+    }
+
+}
+
+#popup {
+    width: 90vw;
+    position: fixed;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 15;
+}
+
+#popup.active {
+    visibility: visible;
+    top: 15%;
+    opacity: 1;
+    transition: all 1s;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    background: #88C0D0;
+    min-height: 100px;
+    margin-top: 10vh;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social_icon,
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0;
+}
+
+footer .social_icon li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .social_icon li a {
+    font-size: 2em;
+    color: var(--background);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    opacity: 0.75;
+}
+
+footer .social_icon li a:hover {
+    transform: translateY(-15px);
+    opacity: 1;
+    color: #fff;
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: var(--background);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+footer .menu li a:hover {
+    color: #fff;
+}
+
+footer #copyright {
+    color: var(--background);
+    font-size: 1.2rem;
+}
+
+/*wave and animation*/
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('../images/wave.png');
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 0;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1;
+    opacity: 0.2;
+    bottom: 0;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 0;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+/* Fade-In Animation class for element */
+.hidden{
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hidden-list:nth-child(2) {
+    transition-delay: 1s;
+}
+.hidden-list:nth-child(3) {
+    transition-delay: 2s;
+}
+.hidden-list:nth-child(4) {
+    transition-delay: 1s;
+}
+.hidden-list:nth-child(5) {
+    transition-delay: 2s;
+}
+
+@media (prefers-reduced-motion){
+    .hidden {
+        transition: none;
+    }
+}
+
+#scroll-container {
+    overflow-y: scroll;
+}
+
+.svg-bg{
+    position: fixed;
+    top: 0px;
+    /* margin-left: 2%; */
+    height: 100vh;
+    /* width: 100vw; */
+    aspect-ratio: 21/9;
+    overflow: hidden;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#home {
+    clip-path: url(#cache);
+}
+
+#red {
+    fill: none;
+    opacity: 0.15;
+    stroke: #CE1B5F;
+    stroke-width: 12;
+    stroke-miterlimit: 10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: #06A1C4;
+    stroke-width: 12;
+    stroke-miterlimit: 10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#light-blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: #06A1C4;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 800;
+    animation: draw 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0.15;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.15;
+    }
+}
+
+.link-none {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.blue-bg {
+    background-color:#88C0D0;
+}
+
+.blue {
+    color:#88C0D0;
+}
+
+.grey-bg {
+    background-color: #4C566A;
+}

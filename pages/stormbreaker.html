@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="icon" type="image/x-icon" href="../images/icons/logo.svg">
+    <title>Starlight5234's StormBreaker</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- Fonts Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e90de7a47e.js" crossorigin="anonymous"></script>
+
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Custom Mouse -->
+    <script type="text/javascript"
+        src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
+
+    <!-- Disable autoscroll -->
+    <script>
+        history.scrollRestoration = "manual"
+    </script>
+
+
+</head>
+
+<body class="bg-color">
+    <nav id="navbar" class="navbar navbar-dark nav-color fixed-top p-0">
+        <div id="nav-container" class="container-fluid mx-md-5">
+            <a id="nav-name" class="navbar-brand magic-hover magic-hover__square"
+            data-bs-toggle="tooltip" title="Home Page" href="../index.html">
+                <img src="../images/icons/logo.svg" alt="Starlight5234" width="30" height="24"
+                    class="d-inline-block align-baseline">
+                Starlight5234
+            </a>
+
+            <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                class="no-cursor text-white link-underline link-underline-opacity-0">
+                <span class="d-none d-sm-inline px-3">Menu</span>
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end grey-bg text-white no-cursor text-center" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+
+          <a type="button" class="me-md-4 text-white" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="menu-content">
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="../index.html">Home</a></li>
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="./stormbreaker.html">StormBreaker</a></li>
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="./projects.html">Projects</a></li>
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="./events.html">Events</a></li>
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="https://github.com/starlight5234"><i class="fa-brands fa-github pe-1"></i>Github</a></li>
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="https://t.me/starlight5234/"><i class="fa-brands fa-telegram pe-1"></i>Telegram</a></li>
+                <li class="menu-items"><a class="text-white link-underline link-underline-opacity-0" href="https://www.linkedin.com/in/anurag-chorghe-304119215/"><i class="fa-brands fa-linkedin pe-1"></i>LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="fixed wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+    
+    <div id="content-container">
+        <section id="title-container" class="full-div centered-div">
+            <div class="row">
+                <div class="col-sm-12 col-xl-auto centered-div">
+                    <img class="img-fluid" alt="StormBreaker Banner" src="../images/sb-banner.svg" height="480" width="640">
+                </div>
+                <div class="col-12 col-xl centered-div flex-column mt-5">
+                    <h1>Who are we?</h1>
+                    <p class="pt-5">
+                        We here at Team StormBreaker, aim for a kernel with fine tuned balance between performance, battery &
+                        usage stability while reaching Android's requirements & being up-to-date with LTS release. It has an
+                        easy installation process thanks to AnyKernel3 (by osm0sis) which lets us support Custom ROMs.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="features">
+            <div class="row">
+                <div class="col-md-12 order-md-1 order-2">
+                    <h1 class="text-center">Features</h1>
+                </div>
+                <div class="col-12 col-md-auto centered-div order-md-2 order-1">
+                    <img class="section-img" src="../images/index/kernel.png">
+                </div>
+                <div class="col-md order-md-3 order-3">
+                    <p>
+                        All the basic features(every bug is an intended feature btw) such as touch, audio, fingerprint, camera, and more work just fine. However Xiaomi is
+                        notorious these days so if your touchscreen doesn't work, I won't be amused. You can fill the contact form and I'll
+                        provide assistance for you if it is possible.
+                    <ul>
+                        <li>Based on LA.UM.9.15.r1-02000-KAMORTA.0</li>
+                        <li>Supports Android 11</li>
+                        <li>Enable Power Efficient Workqueue</li>
+                        <li>Faster & better deepsleep</li>
+                        <li>Support ExFat (for sdcards)</li>
+                        <li>Updated wlan & techpack drivers from LA.UM.9.15.r1-02000-KAMORTA.0</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="download">
+            <div class="row">
+                <div class="col-md-12 order-md-1 order-2">
+                    <h1 class="text-center">Download</h1>
+                </div>
+                <div class="col-12 col-md-auto centered-div order-md-3 order-1">
+                    <img class="section-img" src="../images/download.png">
+                </div>
+                <div class="col-md order-md-2 order-3">
+                    <p>
+                        Please read the changelog attached to the posts to find your favourite download 😉<br>
+                        <b>Codename for Poco M3 is <i>citrus</i> and Redmi 9T is <i>lime</i>.</b><br>
+                        It is recommended to use the latest version
+                    </p>
+                    <div class="row text-center text-md-start pb-3">
+                        <div class="col-md-12 col-sm-12 my-2">
+                            <a class="btn blue-bg magic-hover magic-hover__square" type="button" href="https://t.me/stormbreakerkernelupdatescl/904">Version 5</a>
+                        </div>
+                        <div class="col-6 col-md-auto col-sm-6 my-2">
+                            <a class="btn blue" href="https://t.me/stormbreakerkernelupdatescl/900">Version 4</a>
+                        </div>
+                        <div class="col-6 col-md-auto col-sm-6 my-2">
+                            <a class="btn blue" href="https://t.me/stormbreakerkernelupdatescl/896">Version 3</a>
+                        </div>
+                        <div class="col-6 col-md-auto col-sm-6 my-2">
+                            <a class="btn blue" href="https://t.me/stormbreakerkernelupdatescl/884">Version 2</a>
+                        </div>
+                        <div class="col-6 col-md-auto col-sm-6 my-2">
+                            <a class="btn blue" href="https://t.me/stormbreakerkernelupdatescl/881">Version 1</a>
+                        </div>
+                    </div>
+                    <p>
+                        Or simply click <a href="https://sourceforge.net/projects/stormbreakerdevices/files/citrus/">here</a> and find
+                        the
+                        latest link for
+                        your device using the codename and the download will begin. No XDA link as of now (rarely updated, use telelgram
+                        channels for faster updates)
+                    </p>
+                
+                </div>
+            </div>
+        </section>
+        <section id="installation">
+            <div class="row">
+                <div class="col-md-12 order-md-1 order-2">
+                    <h1 class="text-center">Installation</h1>
+                </div>
+                <div class="col-12 col-md-auto centered-div order-md-2 order-1">
+                    <img class="section-img" src="../images/projects/rom.png">
+                </div>
+                <div class="col-md order-md-3 order-3">
+                    <ul>
+                        <li>Make sure you have a custom recovery like Orangefox/TWRP</li>
+                        <li>Download the kernel zip from <a href="#download">downloads</a> section</li>
+                        <li>Reboot to recovery</li>
+                        <li>Backup your current kernel a.k.a Boot Partition</li>
+                        <li>Install the kernel zip file <u>without</u> wiping any partitions</li>
+                        <li>Reboot back to system</li>
+                        <li>Enjoy! :D</li>
+                    </ul>
+                    <p>
+                        NOTE : Give the kernel atleast a 2-3 day usage cycle before complaining because EAS uses precision based on
+                        CPU
+                        frequency scaling, task placement on CPU cores, and task migration between cores.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="extra" class="centered-div align-items-center">
+            <h1 class="text-center">More about us</h1>
+            <a href="https://t.me/stormbreakerkernelupdatescl" class="btn blue-bg rounded-pill mt-2 mx-5 magic-hover magic-hover__square"><i class="fa-brands fa-telegram"></i> StormBreaker Updates</a>
+            <a href="https://t.me/Stormbreakerofficial" class="btn blue-bg rounded-pill mt-2 mx-5 magic-hover magic-hover__square"><i class="fa-brands fa-telegram"></i> StormBreaker Community/Support</a>
+            <a href="https://t.me/stormbreakerkernelupdatescl/905" class="btn blue-bg rounded-pill mt-2 mx-5 magic-hover magic-hover__square"><i class="fa-brands fa-telegram"></i> Want to become part of the Team?</a>
+            <p class="mt-3"><b>Team members:</b></p>
+            <ul>
+                <li>Danascape (Lead)</li>
+                <li>Akshay Kakatkar</li>
+                <li>Sreekanth Palakurthi</li>
+                <li>PredatorX91</li>
+                <li>Sakthivel</li>
+                <li>Giovanni Ricca</li>
+                <li>Rahul Pandey</li>
+                <li>Starlight5234</li>
+                <li>Debayan Kar</li>
+            </ul>
+        </section>
+        <!-- <section class="empty"></section> -->
+        
+        <!-- Footer -->
+        <footer id="footer" class="footer-padding">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li>
+                    <a href="https://github.com/starlight5234">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/starlight5234/">
+                        <i class="fa-brands fa-telegram" style="transform:translateY(-5px)"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/anurag-chorghe-304119215/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../index.html#skills">Services</a></li>
+                <li><a href="#a" onclick="contactAnimation('content-container')">Contact</a></li>
+            </ul>
+            <div id="copyright" class="container-fluid d-flex align-items-center justify-content-center">
+                <div class="row text-center justify-content-center">
+                    <div class="col-12 col-sm-auto">
+                        &copy2023 Anurag Chorghe
+                    </div>
+                    <div class="d-none d-lg-inline col-sm-auto">
+                        |
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="popup" class="d-none">
+        <div id="contact" class="full-div d-flex align-items-center justify-content-center text-light no-cursor">
+            <div class="container px-5 ps-0">
+                <div class="contact-container">
+                    <div class="contact-content pb-5 rounded-5 text-center">
+                        <h1 class="py-3">
+                            Let's Talk
+                            <i class="fa fa-times text-light position-absolute top-0 end-0 me-4 mt-3 me-md-4 mt-md-4"
+                                aria-hidden="true" onclick="contactAnimation('content-container')"></i>
+                        </h1>
+                        <p class="text-light mx-5">
+                            To request a query or want to meet up for coffee, contact me directly on social media or
+                            fill
+                            out this form and I will get back to you promptly
+                        </p>
+                        <div class="row align-items-center px-3">
+                            <div class="col col-12 col-md-6 d-none d-md-flex align-items-center justify-content-center">
+                                <img class="img-fluid ms-5" src="../images/icons/contact-me.svg" alt="contact-me-image"
+                                    onclick="alert('Perhaps some animation')" data-bs-toggle="tooltip"
+                                    title="Try clicking me">
+                            </div>
+                            <div class="col col-md-6 py-3 py-md-0">
+                                <form id="contactForm">
+                                    <div class="row mx-3">
+                                        <div class="col col-12 col-lg-6" style="z-index: 999;">
+                                            <input id="inputName" name="Name" type="text" class="form-control"
+                                                placeholder="Your Name" aria-label="Your Name">
+                                        </div>
+                                        <div class="col col-12 col-lg-6 py-3 py-lg-0">
+                                            <input id="inputMail" name="Email" type="text" class="form-control"
+                                                placeholder="Your Email" aria-label="Your Email">
+                                        </div>
+                                        <div class="col col-12 pt-lg-4">
+                                            <textarea id="inputQuery" name="Query" class="form-control" rows="3"
+                                                placeholder="Type your query or message here"></textarea>
+                                        </div>
+
+                                        <div class="col col-12 py-3 pt-md-4 mx-auto">
+                                            <button id="contactForm-btn" type="submit" value="submit"
+                                                class="btn btn-primary form-control">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Theming -->
+    <link rel="stylesheet" type="text/css" href="../themes/global.css">
+    <link rel="stylesheet" type="text/css" href="../themes/template.css">
+    <link rel="stylesheet" type="text/css" href="../themes/stormbreaker.css">
+    <link rel="stylesheet" type="text/css" href="../themes/background.css">
+
+    <script src="../js/common/mouseAnimation.js"></script>
+    <script src="../js/common/contactForm.js"></script>
+
+</body>
+
+</html>
