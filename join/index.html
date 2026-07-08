@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joining SkyStream WatchParty...</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-left-color: #09f;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #09f;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #007bb5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="spinner"></div>
+        <h1>Connecting to WatchParty</h1>
+        <p>Attempting to open SkyStream on your device...</p>
+        <a id="app-link" class="btn" href="#">Open Manually</a>
+    </div>
+
+    <script>
+        // 1. Get the current URL parameters (e.g. ?host=Alice&code=...)
+        const queryParams = window.location.search;
+
+        // 2. Build the custom app scheme deep link
+        const appDeepLink = "skystream://join" + queryParams;
+
+        // 3. Update the manual button link
+        document.getElementById("app-link").href = appDeepLink;
+
+        // 4. Automatically trigger redirect to app
+        window.location.href = appDeepLink;
+
+        // 5. Fallback: If they stay on the page, they can click the button
+        setTimeout(() => {
+            document.querySelector("p").innerText = "If the app didn't open automatically, tap the button below.";
+        }, 3000);
+    </script>
+</body>
+
+</html>
